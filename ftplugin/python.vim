@@ -16,6 +16,9 @@ try:
             continue
         children = node.body
         start = node.lineno + 1
+        # if has decorators
+        if node.decorator_list:
+            start += len(node.decorator_list)
         end = children[0].lineno
         vim.command("%d,%dfold" % (start, end))
 except Exception, e:
