@@ -3,13 +3,13 @@ if exists('g:loaded_python_docstring')
 endif
 let g:loaded_python_docstring = 1
 
-if !has('python')
-    echo "Error: Docstring requires vim compiled with +python"
+if !has('pythonx')
+    echomsg "Error: Docstring requires vim compiled with +python or +python3"
     finish
 endif
 
 function! PyDocHide()
-python << EOF
+pythonx << EOF
 import vim
 import ast
 try:
