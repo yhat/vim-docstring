@@ -1,3 +1,8 @@
+if exists('g:loaded_python_docstring')
+    finish
+endif
+let g:loaded_python_docstring = 1
+
 if !has('python')
     echo "Error: Docstring requires vim compiled with +python"
     finish
