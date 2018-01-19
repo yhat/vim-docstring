@@ -9,6 +9,7 @@ if !has('pythonx')
 endif
 
 function! PyDocHide()
+    setlocal foldmethod=manual
 pythonx << EOF
 import vim
 import ast
