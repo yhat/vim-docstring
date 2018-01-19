@@ -1,3 +1,10 @@
+" Vim folding file
+" Language:     Python (docstring)
+" Author:       Eric Chiang, Milly (module)
+" Last Change:  20 Jan 2018
+" Version:      1.1
+
+
 if exists('g:loaded_python_docstring')
     finish
 endif
